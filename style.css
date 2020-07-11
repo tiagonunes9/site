@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/***** ESTILOS GLOBAIS ****/
+
+body {
+    background-color: black;
+    width: 100vw;
+    color: white;
+}
+
+nav {
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 9999;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: -7px 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 162%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    transition: .2s;
+    color: white;
+    text-decoration: none;
+    font-size: 170%;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 27px;
+        padding-left: 25px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin-right: 40px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.link {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 162%;
+    text-align: center;
+}
+
+.background {
+    width: 100vw;
+    height: 95vh;
+}
+
+h2 {
+    font-family: "Roboto";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+.btn {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.goals {
+    width: auto;
+}
+
+.about {
+    width: auto;
+}
+
+.download {
+    width: auto;
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.text {
+    margin: 5%;
+    text-align: justify;
+}
+
+.language {
+    width: 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+}
+
+.row {
+    text-align: center;
+    margin: 5%;
+    text-align: justify;
+}
